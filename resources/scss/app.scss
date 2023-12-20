@@ -11,10 +11,41 @@ $fa-font-path: "../webfonts" !default;
 
 h1 {
     color: $text-color;
+
 }
 
+h2{
+    text-align: center;
+    text-decoration: none!important;
+    text-decoration-line: none;
+    color: red;
+}
+
+a{
+    text-decoration: none;
+}
 
 .myActive{
 
     color: red!important;
+}
+
+main{
+    padding-top: 20px;
+    background-color: orange;
+    min-height: 100vh;
+}
+
+
+.myCircle {
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+    color: white;
+    font-size: 2em;
+    border-radius: 50%;
+}
+
+a{
+    color: white;
 }
