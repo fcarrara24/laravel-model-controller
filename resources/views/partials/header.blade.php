@@ -4,4 +4,7 @@
     <div><a href="{{ route('movies.index') }}"
             class=" text-black text-decoration-none {{ Route::currentRouteName() == 'movies.index' ? 'myActive' : '' }}">film</a>
     </div>
+    <div><a href="{{ route('books.index') }}"
+            class=" text-black text-decoration-none {{ Route::currentRouteName() == 'books.index' ? 'myActive' : '' }}">book</a>
+    </div>
 </div>

@@ -7,14 +7,13 @@
     <main>
         <div class="container">
             <div class="row">
-                @foreach ($movies as $movie)
+                @foreach ($books as $book)
                     <div class="col-12 col-md-4 col-lg-3 pb-4">
                         <div class="card h-100">
-                            <img src="{{ $movie->image }}" alt="" class="w-100">
-                            <a href="{{ route('movies.show', $movie->id) }}">
-                                <h2>{{ $movie->title }}</h2>
-                            </a>
-
+                        <img src="{{ $book->cover_image }}" alt="" class="w-100">
+                        <a href="{{ route('books.show', $book->id) }}">
+                            <h2>{{ $book->title }}</h2>
+                        </a>
 
                         </div>
                     </div>
