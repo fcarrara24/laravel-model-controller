@@ -7,6 +7,6 @@
         <h1>Home page</h1>
     </main>
 
-    <a href="{{ route('movies.index') }}">film</a>
+
 
 @endsection

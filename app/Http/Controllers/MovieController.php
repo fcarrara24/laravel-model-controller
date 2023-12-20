@@ -12,4 +12,10 @@ class MovieController extends Controller
         $movies = Movie::all();
         return view('movies.index')->with('movies', $movies);
     }
+
+    public function show($id)
+    {
+        $movie = Movie::Book::findOrFail($id)->get();
+        return view('movies.show')->with('movie', $movie);
+    }
 }
