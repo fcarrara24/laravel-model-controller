@@ -30,12 +30,26 @@ a{
     color: red!important;
 }
 
-main{
-    padding-top: 20px;
-    background-color: orange;
+
+
+main {
+    background: linear-gradient(42deg,#d6d7e8,#f37898,#f4ff00);
+    background-size: 180% 180%;
+    animation: gradient-animation 27s ease infinite;
     min-height: 100vh;
 }
 
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
 
 .myCircle {
     height: 200px;
@@ -49,3 +63,4 @@ main{
 a{
     color: white;
 }
+
